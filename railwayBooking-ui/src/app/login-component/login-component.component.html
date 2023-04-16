@@ -1,0 +1,20 @@
+<div class="login-container">
+    <div class="imgcontainer">
+      <!-- Add your image or logo here -->
+    </div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" [(ngModel)]="username" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" [(ngModel)]="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" (click)="onSubmit()">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <!-- <div class="error-message" *ngIf="errorMessage">{{errorMessage}}</div> -->
+  </div>
+
+  
